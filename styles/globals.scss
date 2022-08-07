@@ -1149,8 +1149,13 @@ a {
 			margin: 0 auto;
 			position: relative;
 
-			h1 {
+			.stock {
+				width: 100%;
 				font-family: var(--primary-font);
+				font-size: 30px;
+				margin-top: 50px;
+				text-align: center;
+				color: red;
 			}
 
 			@media screen and (max-width: 1024px) {

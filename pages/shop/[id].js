@@ -120,7 +120,7 @@ const cart = {
 					{products.productStock ? 
 					<button onClick={() => validCart()}>Add to cart</button> 
 					: 
-					<h1>Out of stock</h1>
+					<p className="stock">Out of stock</p>
 					}
 					
 					
