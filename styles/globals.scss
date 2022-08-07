@@ -1,14 +1,14 @@
 @font-face {
 	font-family: 'Gotham';
-	src: url('../assets/GothamMedium.ttf');
-	src: url('../assets/GothamBook.ttf');
+	src: url('../assets/GothamMedium.ttf') format('truetype');
+	src: url('../assets/GothamBook.ttf') format('truetype');
 	font-weight: 200;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Univers LT';
-	src: url('../assets/Univers\ LT\ 73\ Black\ Extended.ttf');
+	src: url('../assets/Univers\ LT\ 73\ Black\ Extended.ttf') format('truetype'),;
 	font-weight: 200;
 	font-style: normal;
 }
