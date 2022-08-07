@@ -30,7 +30,7 @@ const Product = ({ data }) => {
 	const imgs = products.productImage;
 	const colors = products.productColors;
 	const sizes = products.productSizes;
-	console.log(products)
+	// console.log(products)
 	const length = imgs.length;
 	const page = `${current + 1 } / ${length}`
 
