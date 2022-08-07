@@ -26,13 +26,13 @@ const item = {
 };
 
 const ProductCard = ({ products }) => {
-	const reduced = products.reduce((filtered, product) => {
-		if(product.productStock == true){
-			filtered.push(product);
-		}
+	// const reduced = products.reduce((filtered, product) => {
+	// 	if(product.productStock == true){
+	// 		filtered.push(product);
+	// 	}
 
-		return filtered;
-	}, [])
+	// 	return filtered;
+	// }, [])
 
 	return (
 		<motion.div className="card-container"
@@ -40,7 +40,7 @@ const ProductCard = ({ products }) => {
         initial="hidden"
         animate="visible"
         >
-			{reduced.map((product) => (
+			{products.map((product) => (
 				<motion.div 
 				variants={item}
 				key={product._id}

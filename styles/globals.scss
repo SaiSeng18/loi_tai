@@ -13,17 +13,26 @@
 	font-style: normal;
 }
 
+
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #000000;
+	--text-color: #7e7e7e;
+	--primary-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	--secondary-font: 'Univers LT', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--primary-font)
 }
 
 h1 {
-	font-family: 'Univers LT', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+	font-family: var(--secondary-font)
 }
 
 a {
@@ -35,11 +44,6 @@ a {
   box-sizing: border-box;
 }
 
-:root {
-	--primary-color: #ffffff;
-	--secondary-color: #000000;
-	--text-color: #7e7e7e;
-}
 
 // Layout
 
@@ -564,10 +568,13 @@ a {
 
 .content-1 {
 	width: 100%;
-	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media screen and (min-width: 450px) {
+		height: 300px;
+	}
 	
 	p {
 		font-size: 20px;
@@ -1142,6 +1149,10 @@ a {
 			margin: 0 auto;
 			position: relative;
 
+			h1 {
+				font-family: var(--primary-font);
+			}
+
 			@media screen and (max-width: 1024px) {
 				width: 100%;
 				padding: 0;
@@ -1316,6 +1327,10 @@ a {
 .terms {
 	color: var(--secondary-color);
 	font-size: 18px;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 12px;
+	}
 }
 
 // Footer

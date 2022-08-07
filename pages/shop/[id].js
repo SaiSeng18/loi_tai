@@ -21,7 +21,6 @@ const Product = ({ data }) => {
 	const [addItem, setAddItem] = useState(false);
 	const [warning, setWarning] = useState(false);
 	const dispatch = useDispatch();
-	// console.log(image)
 
 	
 
@@ -31,7 +30,7 @@ const Product = ({ data }) => {
 	const imgs = products.productImage;
 	const colors = products.productColors;
 	const sizes = products.productSizes;
-	// console.log(colors[0].productColorImg)
+	console.log(products)
 	const length = imgs.length;
 	const page = `${current + 1 } / ${length}`
 
@@ -117,8 +116,13 @@ const cart = {
 							}
 						</div>
 					</div>
-
-					<button onClick={() => validCart()}>Add to cart</button>
+					
+					{products.productStock ? 
+					<button onClick={() => validCart()}>Add to cart</button> 
+					: 
+					<h1>Out of stock</h1>
+					}
+					
 					
 				</div>
 			</div>
