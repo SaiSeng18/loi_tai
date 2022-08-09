@@ -32,7 +32,7 @@ const Product = ({ data }) => {
 	const sizes = products.productSizes;
 	// console.log(products)
 	const length = imgs.length;
-	const page = `${current + 1 } / ${length}`
+	// const page = `${current + 1 } / ${length}`
 
 const cart = {
 	id: products.productID,
@@ -81,7 +81,7 @@ const cart = {
 						</div>
 					)}
 					<FaChevronRight color='#bebebe' className="next-arrow" onClick={nextSlide} />
-				<p className="page">{page}</p>
+				{/* <p className="page">{page}</p> */}
 					
 				</div>
 
