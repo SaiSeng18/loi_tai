@@ -16,9 +16,6 @@ const Receipt = ({data, pass, setPass}) => {
 	const orderData = cart.map((cart) => (`${cart.name} [${cart.color}, ${cart.size}, ${cart.quantity}] \n`))
 	const orderDetail = orderData.toString();
 
-
-	console.log(typeof(data.ph_no))
-
 	const getTotalPrice = () => {
 		return cart.reduce(
 		  (accumulator, item) => accumulator + item.quantity * item.price,0
