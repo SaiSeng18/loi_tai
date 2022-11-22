@@ -57,13 +57,25 @@ export default function Home() {
 					}}>
 					<SwiperSlide>
 						<div className="swiper-img-container">
-							<Image src={images.female} alt="image" layout="fill" objectFit="cover" />
+							<Image
+								priority
+								src={images.female}
+								alt="image"
+								layout="fill"
+								objectFit="cover"
+							/>
 						</div>
 					</SwiperSlide>
 
 					<SwiperSlide>
 						<div className="swiper-img-container">
-							<Image src={images.male} alt="image" layout="fill" objectFit="cover" />
+							<Image
+								priority
+								src={images.male}
+								alt="image"
+								layout="fill"
+								objectFit="cover"
+							/>
 						</div>
 					</SwiperSlide>
 				</Swiper>

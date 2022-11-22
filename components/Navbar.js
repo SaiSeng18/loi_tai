@@ -21,7 +21,12 @@ const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<Link href="/" passHref>
-				<Image src={images.loitai} alt="image" height={40} width={180}></Image>
+				<Image
+					src={images.loitai}
+					alt="image"
+					height={40}
+					width={180}
+					priority></Image>
 			</Link>
 			<div className="menu">
 				<li>
@@ -90,11 +95,11 @@ const Navbar = () => {
 
 			<div className="shop-cart">
 				<div className="cart-img" onClick={handleCart}>
-					<Image src={images.cart} alt="cart"></Image>
+					<Image priority src={images.cart} alt="cart"></Image>
 				</div>
 				{toggle ? (
 					<div className="menu-icon" onClick={handleToggle}>
-						<Image src={images.menu} alt="menu"></Image>
+						<Image priority src={images.menu} alt="menu"></Image>
 					</div>
 				) : (
 					<Burgermenu handleToggle={handleToggle} />

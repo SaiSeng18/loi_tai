@@ -39,6 +39,7 @@ const ProductCard = ({ products }) => {
 						<div className="shop-card">
 							<div className="img-container">
 								<Image
+									priority
 									src={urlFor(product.productImage[0]).url()}
 									// width={300}
 									// height={300}
