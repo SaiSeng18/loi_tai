@@ -175,6 +175,7 @@ export const getStaticProps = async (context) => {
 	const query = '*[_id == "' + id + '"]';
 
 	const data = await client.fetch(query);
+	console.log(data);
 
 	return {
 		props: { data: data },
