@@ -27,8 +27,6 @@ const item = {
 };
 
 const Shop = ({ products, orders }) => {
-	console.log(products);
-
 	return (
 		<div className="body shop">
 			<div className="catagory">
@@ -47,7 +45,6 @@ const Shop = ({ products, orders }) => {
 export const getStaticProps = async () => {
 	const query = `*[_type == "product"]`;
 	const data = await client.fetch(query);
-	console.log(data);
 
 	return {
 		props: { products: data },

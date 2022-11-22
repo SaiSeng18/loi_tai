@@ -24,7 +24,6 @@ const Product = ({ data }) => {
 	const imgs = products.productImage;
 	const colors = products.productColors;
 	const sizes = products.productSizes;
-	// console.log(products)
 	const length = imgs.length;
 	// const page = `${current + 1 } / ${length}`
 
@@ -37,7 +36,6 @@ const Product = ({ data }) => {
 		size: size,
 		image: image,
 	};
-	// console.log(cart)
 
 	const nextSlide = () => {
 		setCurrent(current === length - 1 ? 0 : current + 1);
@@ -175,7 +173,6 @@ export const getStaticProps = async (context) => {
 	const query = '*[_id == "' + id + '"]';
 
 	const data = await client.fetch(query);
-	console.log(data);
 
 	return {
 		props: { data: data },
